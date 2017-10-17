@@ -16,11 +16,6 @@ import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnSuccessListener;
 
 public class MainActivity extends AppCompatActivity {
-    private FusedLocationProviderClient mFusedLocationProviderClient;
-
-    private final static int MY_PERMISSION_REQUEST_ACCESS_COARSE_LOCATION = 10;
-    private final static String[] usePermissions = {Manifest.permission.ACCESS_COARSE_LOCATION};
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

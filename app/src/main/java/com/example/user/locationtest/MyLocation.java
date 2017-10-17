@@ -1,5 +1,6 @@
 package com.example.user.locationtest;
 
+import android.Manifest;
 import android.content.Context;
 import android.location.Location;
 
@@ -14,6 +15,10 @@ import com.google.android.gms.tasks.OnSuccessListener;
 public class MyLocation {
     private Context mContext = null;
     private FusedLocationProviderClient mFusedLocationProviderClient = null;
+
+    private final static int MY_PERMISSION_REQUEST_ACCESS_COARSE_LOCATION = 10;
+    private final static String[] usePermissions = {Manifest.permission.ACCESS_COARSE_LOCATION};
+
 
     public MyLocation(Context context) {
         mContext = context;
